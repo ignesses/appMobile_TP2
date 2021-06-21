@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const FooterComponent = ({ SFooter }) => {
   return (
-    <Footer>
+    <Footer className="fixed-bottom">
       <span>{SFooter}</span>&nbsp;- Escuela Multimedial Da Vinci (2021)
     </Footer>
   );
 };
 
 const Footer = styled.div`
-  height: 10vh;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

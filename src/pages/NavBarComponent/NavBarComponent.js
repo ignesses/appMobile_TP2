@@ -1,7 +1,7 @@
 export const NavBarComponent = () => {
   return (
     <div className="container-fluid px-0">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-2">
         <button
           className="navbar-toggler"
           type="button"
@@ -15,12 +15,22 @@ export const NavBarComponent = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
+            <li className="nav-item p-2">
               <a className="nav-link text-uppercase" href="/">
                 Inicio
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item p-2">
+              <a className="nav-link text-uppercase" href="/characters">
+                Personajes
+              </a>
+            </li>
+            <li className="nav-item p-2">
+              <a className="nav-link text-uppercase" href="/starships">
+                Naves
+              </a>
+            </li>
+            <li className="nav-item p-2">
               <a className="nav-link text-uppercase" href="/about">
                 Acerca De
               </a>

@@ -20,7 +20,7 @@ export const Router = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/starships">
-          <StarShipsPage />
+          <StarShipsPage starWars={starWars} />
         </Route>
 
         <Route path="/characters">

@@ -32,7 +32,7 @@ Video 19/05
 https://create-react-app.dev/docs/getting-started/
 
 ```bash
-npx create-react-app tp-dos-ignacio-esses
+npx create-react-app .
 ```
 
 ### Una vez creada para iniciar el desarrollo es necesario usar el siguiente comando

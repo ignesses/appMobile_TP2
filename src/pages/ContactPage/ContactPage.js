@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavBarComponent } from "../";
+import { NavBarComponent, FooterComponent } from "../";
 import { StarLogoURL } from "./constants";
 
 export const ContactPage = () => {
@@ -15,6 +15,7 @@ export const ContactPage = () => {
           Escuela Multimedial DA VINCI <span>IGNACIO ESSES</span>
         </Texto>
       </Home>
+      <FooterComponent SFooter={"Ignacio Esses"} />
     </>
   );
 };

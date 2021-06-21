@@ -1,5 +1,6 @@
 export * from "./HomePage";
 export * from "./StarWarsCard";
+export * from "./StarShipsPage";
 export * from "./ContactPage";
 export * from "./StarShipsPage";
 export * from "./NotFoundPage";
@@ -7,3 +8,4 @@ export * from "./NavBarComponent";
 export * from "./FooterComponent";
 export * from "./CategoryComponent";
 export * from "./CardComponent";
+export * from "./ShipComponent";

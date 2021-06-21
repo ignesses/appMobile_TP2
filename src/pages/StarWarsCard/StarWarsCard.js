@@ -14,7 +14,7 @@ export const StarWarsCard = ({ starWars }) => {
           console.log(data.results);
         })
         .catch((e) => {
-          console.log("aaaaaaaaaaaaaaaaaa", e);
+          console.log("ERROR", e);
         })
     );
   }, [starWars]);
@@ -24,18 +24,12 @@ export const StarWarsCard = ({ starWars }) => {
       <NavBarComponent />
 
       <Home>
-        <Wrapper>
-          <StarWarsLogo
-            src={process.env.PUBLIC_URL + /images/ + "characters-dark.jpg"}
-            alt="Star Wars logo"
-          />
-        </Wrapper>
         <div className="container-fluid px-0">
           <WrapperBG>
             <div className="container">
               <div className="row py-4">
                 <div className="col-12">
-                  <h1 className="text-light text-uppercase">Personajes</h1>
+                  <h1 className="text-light text-uppercase mt-5">Personajes</h1>
                 </div>
               </div>
 
@@ -63,13 +57,7 @@ const Home = styled.div`
 `;
 
 const WrapperBG = styled.div`
-  background-color: #cecece;
-`;
-
-const Wrapper = styled.div`
-  height: 30vh;
-`;
-const StarWarsLogo = styled.img`
-  margin: auto;
-  width: 100%;
+  background-size: cover;
+  background-image: url("images/characters-dark.jpg");
+  background-attachment: fixed;
 `;

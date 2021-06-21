@@ -13,20 +13,26 @@ export const HomePage = ({ setStarWars }) => {
       </Home>
       <BackgroundWrapper>
         <div className="container">
-          <CategoryComponent
-            setStarWars={setStarWars}
-            name={"Personaje"}
-            img={process.env.PUBLIC_URL + /images/ + "characters.jpg"}
-            apiString={"people"}
-            route={"/characters"}
-          />
-          <CategoryComponent
-            setStarWars={setStarWars}
-            name={"Naves"}
-            img={process.env.PUBLIC_URL + /images/ + "starships.jpg"}
-            apiString={"starships"}
-            route={"/starships"}
-          />
+          <div className="row">
+            <div className="col-6">
+              <CategoryComponent
+                setStarWars={setStarWars}
+                name={"Personajes"}
+                img={process.env.PUBLIC_URL + /images/ + "characters.jpg"}
+                apiString={"people"}
+                route={"/characters"}
+              />
+            </div>
+            <div className="col-6">
+              <CategoryComponent
+                setStarWars={setStarWars}
+                name={"Naves"}
+                img={process.env.PUBLIC_URL + /images/ + "starships.jpg"}
+                apiString={"starships"}
+                route={"/starships"}
+              />
+            </div>
+          </div>
         </div>
       </BackgroundWrapper>
       <FooterComponent SFooter={"Ignacio Esses"} />
@@ -57,4 +63,5 @@ const StarWarsLogo = styled.img`
 
 const BackgroundWrapper = styled.div`
   background-color: #cecece;
+  padding-bottom: 100px;
 `;

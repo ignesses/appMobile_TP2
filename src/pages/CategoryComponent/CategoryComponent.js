@@ -17,7 +17,7 @@ export const CategoryComponent = ({
 
   return (
     <div className="row pt-5 pb-3 justify-content-center">
-      <div className="col-8">
+      <div className="col-12">
         <div className="card">
           <ImgCat onClick={handleClick}>
             <img className="card-img-top" src={img} alt="Card cap" />
