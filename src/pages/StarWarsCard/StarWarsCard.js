@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { CardComponent, NavBarComponent, FooterComponent } from "../";
 
 export const StarWarsCard = ({ starWars }) => {
+  if (starWars === "") {
+    starWars = "people";
+  }
+
   const [starWarsData, setStarWarsData] = React.useState();
 
   React.useEffect(() => {

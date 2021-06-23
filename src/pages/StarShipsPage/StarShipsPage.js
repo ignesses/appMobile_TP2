@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { ShipComponent, NavBarComponent, FooterComponent } from "../";
 
 export const StarShipsPage = ({ starWars }) => {
+  if (starWars === "") {
+    starWars = "starships";
+  }
+
   const [starWarsData, setStarWarsData] = React.useState();
 
   React.useEffect(() => {
